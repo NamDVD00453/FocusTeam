@@ -14,10 +14,7 @@
 
 <AnchorPane prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="panel.body.BodyController">
    <children>
-      <Pane layoutX="260.0" layoutY="70.0" prefHeight="780.0" prefWidth="1180.0" style="-fx-background-color: #f1f1f1;">
-         <children>
-            <Pane layoutX="22.0" layoutY="23.0" prefHeight="217.0" prefWidth="1012.0" style="-fx-background-color: white; -fx-background-radius: 5px;" />
-         </children></Pane>
+      <Pane fx:id="pnMain" layoutX="260.0" layoutY="70.0" prefHeight="780.0" prefWidth="1180.0" />
       <Pane layoutX="260.0" prefHeight="70.0" prefWidth="1180.0" style="-fx-background-color: linear-gradient(to right, #0178bc 0%, #00bdda 100%);">
          <effect>
             <DropShadow height="20.76" radius="4.69" width="0.0" />
@@ -33,7 +30,7 @@
                   </ImageView>
                </graphic>
             </JFXButton>
-            <JFXButton alignment="TOP_LEFT" layoutX="980.0" prefHeight="70.0" prefWidth="200.0" text="Administrator">
+            <JFXButton fx:id="btnProfile" alignment="TOP_LEFT" layoutX="980.0" prefHeight="70.0" prefWidth="200.0" text="Administrator">
                <graphic>
                   <ImageView fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -68,7 +65,7 @@
             </HBox>
             <VBox alignment="TOP_CENTER" layoutY="90.0" prefHeight="600.0" prefWidth="260.0">
                <children>
-                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Dashboard" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS" VBox.vgrow="SOMETIMES">
+                  <JFXButton fx:id="btnDashboard" alignment="TOP_LEFT" lineSpacing="2.0" onAction="#handlSelect" prefHeight="50.0" prefWidth="260.0" style="-fx-background-color: #f1f1f1;" text="  Dashboard" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS" VBox.vgrow="SOMETIMES">
                      <font>
                         <Font name="Courier New Bold" size="18.0" />
                      </font>
@@ -83,7 +80,7 @@
                         <Insets />
                      </opaqueInsets>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Manager" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                  <JFXButton fx:id="btnManager" alignment="TOP_LEFT" lineSpacing="2.0" onAction="#handlSelect" prefHeight="50.0" prefWidth="260.0" text="  Manager" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
                      <font>
                         <Font name="Courier New Bold" size="18.0" />
                      </font>
@@ -98,7 +95,7 @@
                         <Insets />
                      </opaqueInsets>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Add new" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                  <JFXButton fx:id="btnAdd" alignment="TOP_LEFT" lineSpacing="2.0" onAction="#handlSelect" prefHeight="50.0" prefWidth="260.0" text="  Add new" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
                      <font>
                         <Font name="Courier New Bold" size="18.0" />
                      </font>
@@ -113,7 +110,7 @@
                         <Insets />
                      </opaqueInsets>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Attendance" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                  <JFXButton fx:id="btnAttend" alignment="TOP_LEFT" lineSpacing="2.0" onAction="#handlSelect" prefHeight="50.0" prefWidth="260.0" text="  Attendance" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
                      <font>
                         <Font name="Courier New Bold" size="18.0" />
                      </font>
@@ -128,7 +125,7 @@
                         <Insets />
                      </opaqueInsets>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Report" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                  <JFXButton fx:id="btnReport" alignment="TOP_LEFT" lineSpacing="2.0" onAction="#handlSelect" prefHeight="50.0" prefWidth="260.0" text="  Report" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
                      <font>
                         <Font name="Courier New Bold" size="18.0" />
                      </font>
@@ -143,7 +140,7 @@
                         <Insets />
                      </opaqueInsets>
                   </JFXButton>
-                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Statistic" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                  <JFXButton fx:id="btnStatistic" alignment="TOP_LEFT" lineSpacing="2.0" onAction="#handlSelect" prefHeight="50.0" prefWidth="260.0" text="  Statistic" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
                      <font>
                         <Font name="Courier New Bold" size="18.0" />
                      </font>

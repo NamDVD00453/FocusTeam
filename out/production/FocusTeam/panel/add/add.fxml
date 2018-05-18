@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1180.0" style="-fx-background-color: #f1f1f1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="15.0" layoutY="15.0" prefHeight="90.0" prefWidth="1150.0" style="-fx-background-color: #f1f1f1;">
+         <children>
+            <Label prefHeight="35.0" prefWidth="204.0" text="Add new" textFill="#00bdda">
+               <font>
+                  <Font name="Courier New Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="196.0" text="Home  &gt;  Add new" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+      <Pane layoutX="15.0" layoutY="120.0" prefHeight="645.0" prefWidth="1150.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="320.0" prefWidth="320.0" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <children>
+                  <ImageView fitHeight="226.0" fitWidth="246.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resource/image/avatar_tmp.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton prefHeight="32.0" prefWidth="215.0" style="-fx-background-color: #00bdda;" text="Upload" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" layoutX="335.0" prefHeight="645.0" prefWidth="815.0" spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <children>
+                  <VBox prefHeight="103.0" prefWidth="604.0" spacing="10.0">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="287.0" text="Full Name" textFill="#00bdda">
+                           <font>
+                              <Font name="Courier New Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField labelFloat="true" prefHeight="45.0" prefWidth="755.0" promptText="Nguyen Van A">
+                           <font>
+                              <Font name="Courier New" size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="103.0" prefWidth="604.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="287.0" text="Roll Number" textFill="#00bdda">
+                           <font>
+                              <Font name="Courier New Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField labelFloat="true" prefHeight="45.0" prefWidth="755.0" promptText="D00123">
+                           <font>
+                              <Font name="Courier New" size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="103.0" prefWidth="604.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="287.0" text="Email" textFill="#00bdda">
+                           <font>
+                              <Font name="Courier New Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField labelFloat="true" prefHeight="45.0" prefWidth="755.0" promptText="nguyenvana@gmail.com">
+                           <font>
+                              <Font name="Courier New" size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="103.0" prefWidth="604.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="287.0" text="Phone Number" textFill="#00bdda">
+                           <font>
+                              <Font name="Courier New Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField labelFloat="true" prefHeight="45.0" prefWidth="755.0" promptText="0987 123 123">
+                           <font>
+                              <Font name="Courier New" size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="103.0" prefWidth="604.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="49.0" prefWidth="287.0" text="Info" textFill="#00bdda">
+                           <font>
+                              <Font name="Courier New Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField labelFloat="true" prefHeight="45.0" prefWidth="755.0" promptText="Info">
+                           <font>
+                              <Font name="Courier New" size="16.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </VBox>
+                  <JFXButton prefHeight="32.0" prefWidth="215.0" style="-fx-background-color: #55ce63;" text="Upload" />
+               </children>
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</Pane>

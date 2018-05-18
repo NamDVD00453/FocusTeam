@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1180.0" style="-fx-background-color: #f1f1f1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="25.0" layoutY="130.0" prefHeight="645.0" prefWidth="1150.0">
+         <children>
+            <Label prefHeight="149.0" prefWidth="340.0" text="DASHBOARD">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="25.0" layoutY="25.0" prefHeight="90.0" prefWidth="1150.0" style="-fx-background-color: #f1f1f1;">
+         <children>
+            <Label prefHeight="35.0" prefWidth="204.0" text="Dashboard" textFill="#00bdda">
+               <font>
+                  <Font name="Courier New Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="196.0" text="Home " />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>
