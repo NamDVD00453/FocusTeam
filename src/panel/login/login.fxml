@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="390.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="panel.login.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="28.0" layoutY="78.0" prefHeight="522.0" prefWidth="360.0" spacing="20.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <Label text="WELCOME">
+               <font>
+                  <Font name="Courier New Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resource/image/avatar_tmp.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="87.0" prefWidth="337.0" />
+            <VBox alignment="CENTER" prefHeight="241.0" prefWidth="337.0" spacing="50.0">
+               <children>
+                  <JFXTextField labelFloat="true" prefHeight="40.0" prefWidth="337.0" promptText="Username or Email">
+                     <font>
+                        <Font name="Courier New" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField labelFloat="true" prefHeight="40.0" prefWidth="337.0" promptText="Password">
+                     <font>
+                        <Font name="Courier New" size="16.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="40.0" prefWidth="337.0" style="-fx-background-color: #00bdda; -fx-background-radius: 50px;" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <JFXButton alignment="CENTER" buttonType="RAISED" prefHeight="40.0" prefWidth="337.0" style="-fx-background-color: #f62d51; -fx-background-radius: 50px;" text="SIGNUP" textFill="WHITE">
+               <font>
+                  <Font name="Courier New Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

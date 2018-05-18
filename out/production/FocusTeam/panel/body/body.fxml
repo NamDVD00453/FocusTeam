@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.glyphfont.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="panel.body.BodyController">
+   <children>
+      <Pane layoutX="260.0" layoutY="70.0" prefHeight="780.0" prefWidth="1180.0" style="-fx-background-color: #f1f1f1;">
+         <children>
+            <Pane layoutX="22.0" layoutY="23.0" prefHeight="217.0" prefWidth="1012.0" style="-fx-background-color: white; -fx-background-radius: 5px;" />
+         </children></Pane>
+      <Pane layoutX="260.0" prefHeight="70.0" prefWidth="1180.0" style="-fx-background-color: linear-gradient(to right, #0178bc 0%, #00bdda 100%);">
+         <effect>
+            <DropShadow height="20.76" radius="4.69" width="0.0" />
+         </effect>
+         <children>
+            <TextField layoutX="29.0" layoutY="17.0" prefHeight="36.0" prefWidth="287.0" promptText="Search for ..." style="-fx-background-color: white; -fx-background-radius: 50px;" />
+            <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="272.0" layoutY="19.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-radius: 50px;">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resource/image/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="980.0" prefHeight="70.0" prefWidth="200.0" text="Administrator">
+               <graphic>
+                  <ImageView fitHeight="56.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resource/image/admin.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Constantia" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="260.0" layoutY="850.0" prefHeight="50.0" prefWidth="1180.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="1180.0">
+               <children>
+                  <Label contentDisplay="CENTER" text="Copyright © 2018 FOCUS Team" textAlignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane prefHeight="900.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow height="0.0" radius="4.75" spread="0.12" />
+         </effect>
+         <children>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="260.0" style="-fx-background-color: #f9f9f9;">
+               <children>
+                  <Label text="FOCUS LOGO" />
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" layoutY="90.0" prefHeight="600.0" prefWidth="260.0">
+               <children>
+                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Dashboard" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS" VBox.vgrow="SOMETIMES">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/image/clock.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Manager" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/image/manager.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Add new" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/image/new.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Attendance" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/image/attend.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Report" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/image/report.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton alignment="TOP_LEFT" lineSpacing="2.0" prefHeight="50.0" prefWidth="260.0" text="  Statistic" textAlignment="CENTER" textFill="#8d8d8d" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Courier New Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/image/statistic.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
